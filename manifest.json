@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter Map",
+    "description": "Simpler, Readabler Twitter",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": ["*://*.twitter.com/*/status/*"],
+        "js": ["twipster.js"],
+        "run_at": "document_idle"
+    }]
+}
