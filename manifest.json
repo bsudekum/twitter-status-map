@@ -9,7 +9,7 @@
     "version": "0.1",
     "content_scripts": [{
         "matches": ["*://*.twitter.com/*/status/*"],
-        "js": ["twipster.js"],
+        "js": ["twitter-status-map.js"],
         "run_at": "document_idle"
     }]
 }
