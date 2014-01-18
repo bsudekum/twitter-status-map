@@ -1,4 +1,4 @@
-Twitter Map
+Twitter Status Map
 ========
 
 This plugin adds a little map below all geo-located tweets.
