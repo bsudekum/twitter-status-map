@@ -3,9 +3,10 @@ function insertAfter(referenceNode, newNode) {
 }
 
 var loc = document.getElementsByClassName('tweet-geo-text');
+console.log(loc)
 
 for (var i = 0; i < loc.length; i++) {
-    var lat = loc[i].href.split('%2C')[0].split('q=')[1];
+    var lat = loc[i].href.split('%2C')[0].split('q=')[0].split('=')[2];
     var lng = loc[i].href.split('%2C')[1].split('&')[0];
 
     var newImage = document.createElement('img');
