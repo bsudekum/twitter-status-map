@@ -5,7 +5,6 @@ function insertAfter(referenceNode, newNode) {
 var loc = document.getElementsByClassName('tweet-geo-text');
 
 for (var i = 0; i < loc.length; i++) {
-	console.log(loc[i])
 
 	if(loc[i].href.indexOf('maps?z=') > -1){
 		var lat = parseFloat(loc[i].href.split('&ll=')[1].split('%2C')[0]);
