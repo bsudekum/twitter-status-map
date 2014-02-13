@@ -5,8 +5,15 @@ function insertAfter(referenceNode, newNode) {
 var loc = document.getElementsByClassName('tweet-geo-text');
 
 for (var i = 0; i < loc.length; i++) {
-    var lat = loc[i].href.split('%2C')[0].split('q=')[0].split('=')[2];
-    var lng = loc[i].href.split('%2C')[1].split('&')[0];
+	console.log(loc[i])
+
+	if(loc[i].href.indexOf('maps?z=') > -1){
+		var lat = parseFloat(loc[i].href.split('&ll=')[1].split('%2C')[0]);
+    	var lng = parseFloat(loc[i].href.split('?z=')[1].split('%2C')[1]);
+	} else {
+		var lat = parseFloat(loc[i].href.split('?q=')[1].split('%2C')[0]);
+    	var lng = parseFloat(loc[i].href.split('?q=')[1].split('%2C')[1]);
+	}
 
     var newImage = document.createElement('img');
     newImage.src = '//api.tiles.mapbox.com/v3/twitter.map-prnk18sf/pin-m+55acee(' + lng + ',' + lat + ')/' + lng + ',' + lat + ',14/492x100@2x.png';
