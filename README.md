@@ -10,7 +10,7 @@ Note: the map will only show up on a status page like, [twitter.com/bobws/status
 Installation
 ============
 
-1. Download
-2. Go to  `chrome://extensions/`
-3. Click `Load unpacked extension` 
-4. Navigate to plugin and add the entire folder
+1. [Download the plugin](https://github.com/rsudekum/twitter-status-map/raw/master/twitter-status-map.crx)
+2. Drag the plugin on top of Chrome
+3. Go to a geo-located tweet
+4. Win!
