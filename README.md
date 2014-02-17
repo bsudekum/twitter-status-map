@@ -3,6 +3,8 @@ Twitter Status Map
 
 This plugin adds a little map below all geo-located tweets on a status page.
 
+![](https://i.cloudup.com/V4ziIJBF5J-1200x1200.png)
+
 Installation
 ============
 
@@ -10,8 +12,6 @@ Installation
 2. Drag the plugin on top of Chrome
 3. Go to a geo-located tweet
 4. Win!
-
-![](https://i.cloudup.com/V4ziIJBF5J-1200x1200.png)
 
 Examples
 =======
